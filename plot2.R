@@ -10,4 +10,6 @@ for(i in c(2002,2005,2008)){
         mary<-append(mary,sum(subset(NEI,year==i & fips=="24510")$Emissions))
 }
 names(mary)<-c(1999,2002,2005,2008)
+png(filename='plot2.png')
 barplot(mary,xlab="Year",ylab="PM2.5 Emission",main="PM2.5 Emission in the Baltimore City, Maryland")
+dev.off()
