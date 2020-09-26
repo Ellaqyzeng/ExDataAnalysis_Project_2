@@ -12,5 +12,6 @@ for(i in c(2002,2005,2008)){
         x<-append(x,sum(subset(NEI,year==i)$Emissions))
 }
 names(x)<-c(1999,2002,2005,2008)
+png(filename='plot1.png')
 barplot(x,main="PM 2.5 Emission",xlab="Year",ylab="PM 2.5 Emission")
-
+dev.off()
