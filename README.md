@@ -1,7 +1,7 @@
 # ExDataAnalysis_Project_2
 
 ## Background 
-This repo is created for submitting an assignment for a Coursera-program called "Exploratory data analysis". It was needed to create six plots showing comparison/change which implied the answers to the given questions regarding fine particulate matter pollution in the United states over the 10-year period 1999–2008. Data have been got from the National Emissions Inventory database. 
+This repo is created for submitting an assignment for a Coursera-program called "Exploratory data analysis". It was needed to create six plots showing comparison/change which implied the answers to the given questions regarding fine particulate matter pollution in the United states over the 10-year period 1999–2008. This database is known as the National Emissions Inventory (NEI).
 
 ## Questions
 Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
