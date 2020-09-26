@@ -12,5 +12,6 @@ neiscc<-merge(NEI,SCC,by="SCC")
 coal<-subset(neiscc,grepl("Coal",EI.Sector))
 dcoal<-aggregate(Emissions ~ year, coal, sum)
 g<-ggplot(dcoal,aes(x=year,y=Emissions))
+png(filename='plot4.png')
 g+geom_point()+geom_line(color="blue")+ggtitle("US/ Coal Combustion-Related Emissions")
-#plotting
+dev.off()
