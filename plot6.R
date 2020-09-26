@@ -14,5 +14,6 @@ dmlos<-aggregate(Emissions ~ year, motlos, sum)
 dm<-rbind(dmlos,dmbal)
 place<-c(rep("Los Angeles",4),rep("Baltimore",4))
 dm<-cbind(dm,place)
+png(filename='plot6.png')
 p<-ggplot(dm,aes(year,Emissions))+geom_point(aes(color=place),size=4)+ggtitle("Emissions from Motor Vehicle Sources in Baltimore City and Los Angeles")
-p
+dev.off()
